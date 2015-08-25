@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity" >
+
+    <FrameLayout
+         android:id="@+id/fl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/indicate_margin_top">
+		  <com.lewa.compass2.AboveView
+            android:id="@+id/bit_above"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+             />
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/indicate_margin_top" >
+	  
+        <com.lewa.compass2.CompassView
+            android:id="@+id/compass_pointer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/compass" />
+        
+      
+            
+        <LinearLayout
+            android:layout_width="166sp"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/degree_top"
+            android:layout_marginLeft="@dimen/degree_left"
+            android:layout_gravity="center_horizontal">
+            
+             <TextView
+            android:id="@+id/direction_degree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="#c5d2dc" />
+            
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/direction_degree"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="@dimen/degree_margin_top"
+            android:src="@drawable/degree" />
+        
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/btn_adjust"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"/>
+           <ImageView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/arrow_left"
+               android:layout_marginTop="@dimen/arrow_top"
+               android:src="@drawable/arrow"/>
+          <TextView
+            android:id="@+id/direction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textColor="#ffffffff" />
+    </FrameLayout>
+    
+    <LinearLayout
+        android:layout_below="@id/fl"
+        android:id="@+id/locationView"
+        android:layout_marginTop="103dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/fl2"
+            android:layout_marginLeft="50dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+        	<TextView 
+        	    android:layout_width="wrap_content"
+            	android:layout_height="match_parent"
+        	    android:text="@string/Latitude"
+        	    android:textSize="16sp"/>
+        	<TextView 
+        	    android:id="@+id/tv_latitude"
+        	    android:layout_width="wrap_content"
+            	android:layout_height="match_parent"/>
+        </LinearLayout>
+		<LinearLayout
+		    android:layout_marginLeft="130dp"
+		    android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+        	<TextView 
+        	    android:textSize="16sp"
+        	    android:layout_width="wrap_content"
+            	android:layout_height="match_parent"
+        	    android:text="@string/Longitude"/>
+        	<TextView 
+        	    android:id="@+id/tv_longitude"
+        	    android:layout_width="wrap_content"
+            	android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

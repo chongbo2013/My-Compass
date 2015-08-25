@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Compass</string>
+    <string name="north">North</string>
+    <string name="northeast">NorthEast</string>
+    <string name="east">East</string>
+    <string name="southeast">SouthEast</string>
+    <string name="south">South</string>
+    <string name="southwest">SouthWest</string>
+    <string name="west">West</string>
+    <string name="northwest">NorthWest</string>
+    <string name="accuracy_prompt">The near magnetic interference, around shaking the phone calibrate the compass</string>
+    <string name="adjust">adjust</string>
+     <string name="adjust_firstIn">Follow the above schematic shaking the phone around 8 characters calibrate the compass.</string>  
+    <string name="adjust_tv">Nearby there may be magnetic interference \n follow the above schematic shaking the phone around 8 characters calibrate the compass.</string>
+    <string name="adjust_success">adjust success.</string>
+    <string name="adjust_value">The current precision value: </string>
+    <string name="adjust_compass">adjust compass</string>
+    <string name="Latitude">Latitude</string>
+    <string name="Longitude">Longitude</string>
+    <string name="north_tv">N</string>
+    <string name="east_tv">E</string>
+    <string name="south_tv">S</string>
+    <string name="west_tv">W</string>
+    <string name="finish">One more press to exit</string>
+    <string name="adjust_active">Manually calibrating \n follow the above schematic shaking the phone around 8 characters calibrate the compass.</string>
+</resources>

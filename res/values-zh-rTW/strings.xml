@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">指南針</string>
+    <string name="north">北</string>
+    <string name="northeast">東北</string>
+    <string name="east">東</string>
+    <string name="southeast">東南</string>
+    <string name="south">南</string>
+    <string name="southwest">西南</string>
+    <string name="west">西</string>
+    <string name="northwest">西北</string>
+    <string name="accuracy_prompt">附近可能有磁場干擾 \n 請按照上方示意圖繞8字晃動手機校準指南針.</string>
+    <string name="adjust">校準</string>
+    <string name="adjust_firstIn">請按圖示繞8字晃動手機校準指南針</string>    
+    <string name="adjust_tv">附近可能有磁場干擾 \n 請按照上方示意圖繞8字晃動手機校準指南針.</string>
+    <string name="adjust_value">當前精度值: </string>
+    <string name="adjust_success">校準成功</string>
+    <string name="adjust_compass">校準指南針</string>
+    <string name="Latitude">緯度</string>
+    <string name="Longitude">經度</string>
+    <string name="north_tv">北</string>
+    <string name="east_tv">東</string>
+    <string name="south_tv">南</string>
+    <string name="west_tv">西</string>
+    <string name="finish">再按壹次離開指南針</string>
+    <string name="adjust_active">手動校淮中 \n 請按圖示繞8字晃動手機校準指南針</string>
+</resources>

@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity" >
+<FrameLayout 
+    android:id="@+id/ad_fl"
+    android:layout_marginTop="130dp"
+    android:layout_centerHorizontal="true"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+    
+    <com.lewa.compass2.CircleView
+        android:id="@+id/circle"
+        android:layout_height="300dp"
+        android:layout_width="300dp"
+        android:background="#000000"
+        android:src="@drawable/background"
+        android:contentDescription="@string/app_name"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/tv_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:text="@string/adjust_value"
+        android:visibility="gone"/>
+    <ImageView
+        android:id="@+id/iv"
+        android:contentDescription="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/adjust" />
+</FrameLayout>
+ 
+    
+  
+    <TextView
+         android:id="@+id/tv"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textSize="@dimen/tv_size"
+         android:text="@string/adjust_tv"
+         android:gravity="center_horizontal"
+         android:textColor="#ffffff"
+        android:layout_below="@+id/ad_fl"
+        android:layout_marginTop="@dimen/tv_top"
+         />
+</RelativeLayout>
